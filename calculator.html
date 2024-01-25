@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Currency Converter</title>
+</head>
+<body class="calculator">
+    <header>
+        <h1>Currency Converter</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="conversion.html">Conversion</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Currency Converter</h2>
+        <form id="conversionForm">
+            <label for="inputValue">Enter Amount in USD:</label>
+            <input type="number" id="inputValue" required>
+            
+            <label for="currency">Select Currency:</label>
+            <select id="currency" required>
+                <option value="eur">Euro (EUR)</option>
+                <option value="gbp">British Pound (GBP)</option>
+                <option value="jpy">Japanese Yen (JPY)</option>
+                <option value="inr">Indian Rupee (INR)</option>
+                <option value="aud">Australian Dollar (AUD)</option>
+                <option value="myr">Malaysian Ringgit (MYR)</option>
+                <option value="idr">Indonesian Rupiah (IDR)</option>
+                <option value="sgd">Singapore Dollar (SGD)</option>
+            </select>
+            
+            <button type="button" id="calculateButton">Convert</button>
+            <p id="result"></p>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 tukarnilaiduit. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
